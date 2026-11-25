@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start here - MusGenStudio guide</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="menu" type="button" aria-label="Show or hide the page list">Pages</button>
+<aside class="side"><a class="brand" href="index.html">MusGenStudio<br><em>a guide to the views</em></a><nav aria-label="Pages"><div class="ng"><div class="nh">Start</div><a href="index.html" class=cur aria-current=page>Start here</a><a href="window.html">The window and the mouse</a></div><div class="ng"><div class="nh">Views</div><a href="roll.html">Piano roll and lanes</a><a href="plan.html">Plan lane</a><a href="sound.html">Spectrogram and chromagram</a><a href="raw.html">Raw aspect</a><a href="ssm.html">Self-similarity matrix</a><a href="scape.html">Scape plot and thumbnail</a><a href="novelty.html">Novelty</a><a href="stack.html">Aspect stack</a><a href="ab.html">A/B comparison</a></div><div class="ng"><div class="nh">Tours</div><a href="tour-september.html">Tour 1: a real piece</a><a href="tour-generated.html">Tour 2: a generated piece</a><a href="tour-motif.html">Tour 3: only a motif returns</a></div><div class="ng"><div class="nh">Reference</div><a href="lines.html">Every line, dot and colour</a><a href="pitfalls.html">How the views can mislead</a><a href="glossary.html">Words</a><a href="reading.html">Read more</a></div></nav></aside>
+<main>
+<article>
+<h1>Start here</h1>
+
+<p class="lead">The Studio shows one piece of music in many ways. Each view answers a different question. This guide says which question, how to read every line, dot and colour, and where a view can mislead you.</p>
+<p>If you have twenty minutes, take <a href="tour-september.html">the first tour</a>: one real piece, eight views, in order. Then <a href="tour-generated.html">the second</a>: a generated piece, the same questions. If you only want to know what some line means, go to <a href="lines.html">Every line, dot and colour</a>.</p>
+
+<h2>Which view answers which question</h2>
+<div class="tw"><table><thead><tr><th>You wonder</th><th>Open</th><th>Key</th></tr></thead><tbody>
+<tr><td>Which notes, how loud, where is the pedal?</td><td><a href="roll.html">Piano roll and lanes</a></td><td>(a MIDI node)</td></tr>
+<tr><td>What does an expert, or a plan, say about bars, keys, chords, cadences?</td><td><a href="plan.html">Plan lane</a></td><td><kbd>P</kbd></td></tr>
+<tr><td>What does the sound itself look like?</td><td><a href="sound.html">Spectrogram, chromagram</a></td><td><kbd>S</kbd> <kbd>C</kbd></td></tr>
+<tr><td>How do harmony, texture, dynamics, timbre or tempo run through the piece?</td><td><a href="raw.html">Raw aspect</a></td><td><kbd>R</kbd></td></tr>
+<tr><td>What comes back?</td><td><a href="ssm.html">Self-similarity matrix</a></td><td><kbd>M</kbd></td></tr>
+<tr><td>Which section, repeated, best explains the piece?</td><td><a href="scape.html">Scape plot and thumbnail</a></td><td><kbd>T</kbd></td></tr>
+<tr><td>Where does something change?</td><td><a href="novelty.html">Novelty</a></td><td><kbd>N</kbd></td></tr>
+<tr><td>Change of <em>what</em>: harmony, sound, loudness, tempo?</td><td><a href="stack.html">Aspect stack</a></td><td><kbd>K</kbd></td></tr>
+<tr><td>How do two pieces compare?</td><td><a href="ab.html">A/B</a></td><td><kbd>Tab</kbd></td></tr>
+</tbody></table></div>
+
+<h2>The views</h2>
+<div class="cards">
+<a href="roll.html"><span class="th" style="background-image:url(img/s_zoomroll.png)"></span><b>Piano roll and lanes</b><i>Notes, velocity, pedal, measured curves</i></a>
+<a href="plan.html"><span class="th" style="background-image:url(img/s_zoomplan.png)"></span><b>Plan lane</b><i>Bars, keys, chords, cadences, phrases</i></a>
+<a href="sound.html"><span class="th" style="background-image:url(img/s_spec.jpg)"></span><b>Spectrogram and chromagram</b><i>The sound, and its twelve pitch classes</i></a>
+<a href="raw.html"><span class="th" style="background-image:url(img/s_raw_tempo.png)"></span><b>Raw aspect</b><i>The material every structure view works on</i></a>
+<a href="ssm.html"><span class="th" style="background-image:url(img/s_ssm.png)"></span><b>Self-similarity matrix</b><i>Every moment against every other</i></a>
+<a href="scape.html"><span class="th" style="background-image:url(img/s_scape.png)"></span><b>Scape plot</b><i>How well each section stands for the whole</i></a>
+<a href="novelty.html"><span class="th" style="background-image:url(img/s_nov.png)"></span><b>Novelty</b><i>Where the music changes, at 13 scales</i></a>
+<a href="stack.html"><span class="th" style="background-image:url(img/s_stack.png)"></span><b>Aspect stack</b><i>The same question asked of eight aspects</i></a>
+<a href="ab.html"><span class="th" style="background-image:url(img/ui_ab.jpg)"></span><b>A/B comparison</b><i>Two pieces on one time axis</i></a>
+</div>
+
+<h2>The three pieces used here</h2>
+<ul>
+<li><strong>September</strong>: Tchaikovsky, <em>The Seasons</em> Op. 37a No. 9, a real performance transcribed to MIDI (3:07). A clear A-B-A′, with expert labels for its keys, chords and cadences.</li>
+<li><strong>Generated piece 16</strong> (<code>2-p2_16</code>, 2:15): the model's own. It states one 35-second section three times: A A B A.</li>
+<li><strong>Generated piece 12</strong> (<code>2-p2_12</code>, 3:00): no section returns, but one short idea does.</li>
+</ul>
+<p>The zip copy of this guide also holds a <code>projects</code> folder with these three projects. In the Studio use <em>Project, Open project...</em> and choose the <code>project.json</code> inside one of them, or copy the folders beside your other projects.</p>
+<p>Every picture was drawn by the Studio's own code at the Large text size. Click a picture to see it at full size; the numbers on it can be hidden.</p>
+
+<aside class="note"><strong>Evidence, not verdicts.</strong> The views show evidence. None of them judges a piece, and none of them knows what you like. A clear form and a piece you love are two different things.</aside>
+
+</article>
+<nav class="pn" aria-label="Previous and next page"><span></span><a class="r" href="window.html"><span>Next</span>The window and the mouse</a></nav>
+<footer>Made from MusGenStudio's own drawing code, 23 November 2026. The pictures show the real program's views; the numbers are the program's.</footer>
+</main>
+<div class="lb" hidden><img alt=""><button type="button">Close</button></div>
+<script src="js/guide.js"></script>
+</body>
+</html>

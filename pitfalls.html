@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the views can mislead - MusGenStudio guide</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="menu" type="button" aria-label="Show or hide the page list">Pages</button>
+<aside class="side"><a class="brand" href="index.html">MusGenStudio<br><em>a guide to the views</em></a><nav aria-label="Pages"><div class="ng"><div class="nh">Start</div><a href="index.html">Start here</a><a href="window.html">The window and the mouse</a></div><div class="ng"><div class="nh">Views</div><a href="roll.html">Piano roll and lanes</a><a href="plan.html">Plan lane</a><a href="sound.html">Spectrogram and chromagram</a><a href="raw.html">Raw aspect</a><a href="ssm.html">Self-similarity matrix</a><a href="scape.html">Scape plot and thumbnail</a><a href="novelty.html">Novelty</a><a href="stack.html">Aspect stack</a><a href="ab.html">A/B comparison</a></div><div class="ng"><div class="nh">Tours</div><a href="tour-september.html">Tour 1: a real piece</a><a href="tour-generated.html">Tour 2: a generated piece</a><a href="tour-motif.html">Tour 3: only a motif returns</a></div><div class="ng"><div class="nh">Reference</div><a href="lines.html">Every line, dot and colour</a><a href="pitfalls.html" class=cur aria-current=page>How the views can mislead</a><a href="glossary.html">Words</a><a href="reading.html">Read more</a></div></nav></aside>
+<main>
+<article>
+<h1>How the views can mislead</h1>
+
+<p class="lead">Ten habits that keep you out of trouble.</p>
+<ol>
+<li><strong>Check the aspect.</strong> M, T, N and R all show the aspect in the box. "No return" in harmony may be a clear return in texture.</li>
+<li><strong>Each row, its own scale.</strong> In the stack, and per row in novelty, heights are relative to that row. Never compare across rows.</li>
+<li><strong>The edges are blind.</strong> Nothing can be said within L of the start or the end, and the jump where the curve begins is not a boundary.</li>
+<li><strong>Look at persistence, not only height.</strong> A tall peak seen at two scales is a detail.</li>
+<li><strong>Raise the minimum length.</strong> A thumbnail that does not survive 20 or 30 seconds is a motif or a loop.</li>
+<li><strong>Fitness is not quality.</strong> It measures how much of a piece is repetition, and how exact. Copying raises it.</li>
+<li><strong>Harmony forgets octaves, bass and melody.</strong> Same chords, different tune: still a stripe. Another key: no stripe, unless <em>transpose</em> is on.</li>
+<li><strong>Tempo lines lie by factors.</strong> Read the picture. The estimate cannot see above 200 BPM.</li>
+<li><strong>One number repeats by chance.</strong> Dynamics and loudness have one value per moment; their stripes and thumbnails mean less.</li>
+<li><strong>It is all seen through a transcription and one piano.</strong> Wrong notes, pedal times and a single preset shape every view.</li>
+</ol>
+<aside class="try"><strong>And then.</strong> When a view and your ear disagree, trust neither too quickly. Look at the raw aspect, listen again, and write down what you heard before you change a lever.</aside>
+<h2>The default settings used in all pictures</h2>
+<div class="tw"><table><tbody>
+<tr><td>Features</td><td>2.1 s smoothing, 2 values per second, chroma exponent 0.6</td></tr>
+<tr><td>Path enhancement</td><td>6 s, five speeds from 0.66 to 1.5, transposition off</td></tr>
+<tr><td>Threshold</td><td>the strongest 15 percent; penalty -2</td></tr>
+<tr><td>Thumbnail</td><td>minimum 10 s unless a caption says otherwise; scape at 400 frames</td></tr>
+<tr><td>Novelty</td><td>plain matrix, var 0.5, edges excluded, offset 0.05, minimum height 0.1; scale 8 s unless a caption says otherwise</td></tr>
+</tbody></table></div>
+<section class="more"><h2>Read more</h2><ul><li><a href="https://doi.org/10.5334/tismir.54" target="_blank" rel="noopener">Nieto, Mysore, Wang and Smith, <em>Audio-based music structure analysis: current trends, open challenges, and applications</em>, TISMIR 2020</a></li><li><a href="https://www.audiolabs-erlangen.de/fau/professor/mueller/bookFMP" target="_blank" rel="noopener">M. Müller, <em>Fundamentals of Music Processing</em>, 2nd ed., Springer 2021</a> (the book behind most of these views)</li></ul></section>
+
+</article>
+<nav class="pn" aria-label="Previous and next page"><a href="lines.html"><span>Previous</span>Every line, dot and colour</a><a class="r" href="glossary.html"><span>Next</span>Words</a></nav>
+<footer>Made from MusGenStudio's own drawing code, 23 November 2026. The pictures show the real program's views; the numbers are the program's.</footer>
+</main>
+<div class="lb" hidden><img alt=""><button type="button">Close</button></div>
+<script src="js/guide.js"></script>
+</body>
+</html>

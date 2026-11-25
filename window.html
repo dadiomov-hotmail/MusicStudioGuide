@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The window and the mouse - MusGenStudio guide</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="menu" type="button" aria-label="Show or hide the page list">Pages</button>
+<aside class="side"><a class="brand" href="index.html">MusGenStudio<br><em>a guide to the views</em></a><nav aria-label="Pages"><div class="ng"><div class="nh">Start</div><a href="index.html">Start here</a><a href="window.html" class=cur aria-current=page>The window and the mouse</a></div><div class="ng"><div class="nh">Views</div><a href="roll.html">Piano roll and lanes</a><a href="plan.html">Plan lane</a><a href="sound.html">Spectrogram and chromagram</a><a href="raw.html">Raw aspect</a><a href="ssm.html">Self-similarity matrix</a><a href="scape.html">Scape plot and thumbnail</a><a href="novelty.html">Novelty</a><a href="stack.html">Aspect stack</a><a href="ab.html">A/B comparison</a></div><div class="ng"><div class="nh">Tours</div><a href="tour-september.html">Tour 1: a real piece</a><a href="tour-generated.html">Tour 2: a generated piece</a><a href="tour-motif.html">Tour 3: only a motif returns</a></div><div class="ng"><div class="nh">Reference</div><a href="lines.html">Every line, dot and colour</a><a href="pitfalls.html">How the views can mislead</a><a href="glossary.html">Words</a><a href="reading.html">Read more</a></div></nav></aside>
+<main>
+<article>
+<h1>The window and the mouse</h1>
+
+<p class="lead">A project is a tree of files. You pick one, and everything in the middle of the window shows that one piece on one time axis.</p>
+<figure><div class="shot"><img src="img/ui_main.png" width="1833" height="820" loading="lazy" alt="The Studio with September selected and the novelty view open."><svg class="lead-l" viewBox="0 0 1833 820" aria-hidden="true"><g class="o"><path d="M258 42 L200 92" /><circle cx="200" cy="92" r="7.0"/><path d="M388 707 L330 757" /><circle cx="330" cy="757" r="7.0"/><path d="M958 74 L900 24" /><circle cx="900" cy="24" r="7.0"/><path d="M1178 250 L1120 300" /><circle cx="1120" cy="300" r="7.0"/><path d="M1238 721 L1180 771" /><circle cx="1180" cy="771" r="7.0"/><path d="M758 757 L700 807" /><circle cx="700" cy="807" r="7.0"/><path d="M88 758 L30 808" /><circle cx="30" cy="808" r="7.0"/><path d="M123 80 L65 30" /><circle cx="65" cy="30" r="7.0"/></g><g><path d="M258 42 L200 92" /><circle cx="200" cy="92" r="7.0"/><path d="M388 707 L330 757" /><circle cx="330" cy="757" r="7.0"/><path d="M958 74 L900 24" /><circle cx="900" cy="24" r="7.0"/><path d="M1178 250 L1120 300" /><circle cx="1120" cy="300" r="7.0"/><path d="M1238 721 L1180 771" /><circle cx="1180" cy="771" r="7.0"/><path d="M758 757 L700 807" /><circle cx="700" cy="807" r="7.0"/><path d="M88 758 L30 808" /><circle cx="30" cy="808" r="7.0"/><path d="M123 80 L65 30" /><circle cx="65" cy="30" r="7.0"/></g></svg><span class="pin" style="left:14.10%;top:5.08%">1</span><span class="pin" style="left:21.19%;top:86.18%">2</span><span class="pin" style="left:52.29%;top:9.07%">3</span><span class="pin" style="left:64.29%;top:30.44%">4</span><span class="pin" style="left:67.56%;top:87.88%">5</span><span class="pin" style="left:41.38%;top:92.27%">6</span><span class="pin" style="left:4.82%;top:92.40%">7</span><span class="pin" style="left:6.73%;top:9.80%">8</span></div><figcaption>The Studio with September selected and the novelty view open. <button class="pinbtn" type="button">hide numbers</button></figcaption><ol class="pinkey"><li><strong>Project tree.</strong> Each line is a node: a file, and the operation that made it. Here n2 is an audio render of the MIDI n1; n5 is a render of the plan n4. Nothing you do changes a parent node.</li><li><strong>Operations</strong> for the selected node. They depend on its kind.</li><li><strong>Levers</strong> of the open structure view. The <em>Aspect</em> box at the left decides what the view looks at.</li><li><strong>The view.</strong> Time always runs left to right.</li><li><strong>Ruler.</strong> Blue numbers are bars (only when a plan or labels file gives bar times); grey numbers are minutes and seconds.</li><li><strong>Status line.</strong> What the view computed, with its settings. Hover for the full text.</li><li><strong>Play, A/B, Synchronize.</strong> Space plays and pauses.</li><li><strong>View menu.</strong> Every view with its key; the open one is ticked.</li></ol></figure>
+
+<h2>Keys</h2>
+<div class="tw"><table><tbody>
+<tr><td><kbd>S</kbd> <kbd>C</kbd></td><td>Spectrogram, chromagram</td></tr>
+<tr><td><kbd>R</kbd> <kbd>M</kbd> <kbd>T</kbd> <kbd>N</kbd></td><td>Raw aspect, self-similarity matrix, scape plot, novelty: all four follow the Aspect box</td></tr>
+<tr><td><kbd>K</kbd></td><td>Aspect stack: all aspects at once</td></tr>
+<tr><td><kbd>P</kbd></td><td>Plan lane on or off</td></tr>
+<tr><td><kbd>Space</kbd></td><td>Play or pause</td></tr>
+<tr><td><kbd>Tab</kbd>, <kbd>A</kbd>, <kbd>B</kbd></td><td>In A/B: switch between the pieces at the same moment</td></tr>
+</tbody></table></div>
+<p>Press a view's key again to go back to the waveform.</p>
+
+<h2>Mouse</h2>
+<div class="tw"><table><tbody>
+<tr><td>Wheel</td><td>Scroll in time</td></tr>
+<tr><td><kbd>Ctrl</kbd> + wheel</td><td>Zoom in time, around the mouse</td></tr>
+<tr><td>Click</td><td>Move the playback cursor there (in every view, and on the ruler)</td></tr>
+<tr><td>Hover</td><td>Exact values under the mouse</td></tr>
+<tr><td>Right-drag in the matrix (M)</td><td>Select a segment</td></tr>
+<tr><td><kbd>Shift</kbd> + click in the matrix</td><td>Jump to the time of the <em>row</em> instead of the column</td></tr>
+<tr><td>Right-click in the scape plot (T)</td><td>Select the segment under the mouse</td></tr>
+<tr><td><kbd>Shift</kbd> + click in the scape plot</td><td>Jump to the start of that segment</td></tr>
+<tr><td>Right-click in novelty (N)</td><td>Select that scale (row)</td></tr>
+<tr><td>Click in novelty's bottom strip</td><td>Jump to the boundary</td></tr>
+<tr><td>Click an aspect's name in the stack (K)</td><td>Select that aspect; click again for its raw view</td></tr>
+<tr><td>Double-click a pane's splitter</td><td>Collapse or restore the tree or the details panel</td></tr>
+</tbody></table></div>
+
+<h2>Things every view shares</h2>
+<div class="tw"><table class="key"><thead><tr><th>Looks like</th><th>What it is</th><th>How to read and use it</th></tr></thead><tbody><tr><td><svg class="sw" viewBox="0 0 48 20" style="background:#fafafa" aria-hidden="true"><path d="M24 1 V19" stroke="#ff0000" stroke-width="2"/></svg></td><td>Red vertical line</td><td>The playback cursor. It runs through every view, the lanes and the ruler at the same moment.</td></tr><tr><td><svg class="sw" viewBox="0 0 48 20" style="background:#101014" aria-hidden="true"><defs><linearGradient id="h"><stop offset="0" stop-color="#000"/><stop offset=".2" stop-color="#140050"/><stop offset=".4" stop-color="#8c0078"/><stop offset=".6" stop-color="#e63c1e"/><stop offset=".8" stop-color="#ffc828"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><rect x="2" y="3" width="44" height="14" fill="url(#h)"/></svg></td><td>Black, purple, red, yellow, white</td><td>The heat scale of the spectrogram, chromagram, matrix, scape plot, novelty and most raw views: black is the least, white the most. Each view says in its legend line what the least and the most are.</td></tr><tr><td><svg class="sw" viewBox="0 0 48 20" style="background:#101014" aria-hidden="true"><rect x="2" y="3" width="44" height="14" fill="#303030"/></svg></td><td>Plain dark grey</td><td>No data: past the end of the piece, or a segment that does not fit inside it.</td></tr><tr><td><svg class="sw" viewBox="0 0 48 20" style="background:#fafafa" aria-hidden="true"><rect x="2" y="3" width="44" height="14" fill="#c8c8c8"/></svg></td><td>Grey part of the ruler</td><td>Past the end of the piece.</td></tr></tbody></table></div>
+<h3>Contrast</h3>
+<p>A single bright spot can push everything else into the dark. The <em>contrast</em> box offers <strong>linear</strong> and <strong>√</strong> (novelty also <strong>log</strong>). √ and log lift the weak values. Only the colours change; every number, threshold and peak stays the same. Compare the same tempogram, linear and √:</p>
+<figure><div class="shot"><img src="img/s_lin_tempo.png" width="1820" height="650" loading="lazy" alt="September, tempo (MIDI), linear contrast. One loud moment at about 1:57 darkens the rest."></div><figcaption>September, tempo (MIDI), linear contrast. One loud moment at about 1:57 darkens the rest. </figcaption></figure>
+<figure><div class="shot"><img src="img/s_raw_tempo.png" width="1820" height="650" loading="lazy" alt="The same data with √ contrast. The steady band near 240 BPM appears."></div><figcaption>The same data with √ contrast. The steady band near 240 BPM appears. </figcaption></figure>
+<h3>Text size</h3>
+<p><em>View, Settings, Views, Text size</em> offers Normal, Large and Extra large.</p>
+<section class="more"><h2>Read more</h2><ul><li><a href="https://www.audiolabs-erlangen.de/fau/professor/mueller/bookFMP" target="_blank" rel="noopener">M. Müller, <em>Fundamentals of Music Processing</em>, 2nd ed., Springer 2021</a> (the book behind most of these views)</li><li><a href="https://www.audiolabs-erlangen.de/resources/MIR/FMP/C0/C0.html" target="_blank" rel="noopener">The FMP notebooks</a>: the book's free companion, with code, pictures and sound</li></ul></section>
+
+</article>
+<nav class="pn" aria-label="Previous and next page"><a href="index.html"><span>Previous</span>Start here</a><a class="r" href="roll.html"><span>Next</span>Piano roll and lanes</a></nav>
+<footer>Made from MusGenStudio's own drawing code, 23 November 2026. The pictures show the real program's views; the numbers are the program's.</footer>
+</main>
+<div class="lb" hidden><img alt=""><button type="button">Close</button></div>
+<script src="js/guide.js"></script>
+</body>
+</html>

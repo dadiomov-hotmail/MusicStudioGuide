@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A/B comparison - MusGenStudio guide</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="menu" type="button" aria-label="Show or hide the page list">Pages</button>
+<aside class="side"><a class="brand" href="index.html">MusGenStudio<br><em>a guide to the views</em></a><nav aria-label="Pages"><div class="ng"><div class="nh">Start</div><a href="index.html">Start here</a><a href="window.html">The window and the mouse</a></div><div class="ng"><div class="nh">Views</div><a href="roll.html">Piano roll and lanes</a><a href="plan.html">Plan lane</a><a href="sound.html">Spectrogram and chromagram</a><a href="raw.html">Raw aspect</a><a href="ssm.html">Self-similarity matrix</a><a href="scape.html">Scape plot and thumbnail</a><a href="novelty.html">Novelty</a><a href="stack.html">Aspect stack</a><a href="ab.html" class=cur aria-current=page>A/B comparison</a></div><div class="ng"><div class="nh">Tours</div><a href="tour-september.html">Tour 1: a real piece</a><a href="tour-generated.html">Tour 2: a generated piece</a><a href="tour-motif.html">Tour 3: only a motif returns</a></div><div class="ng"><div class="nh">Reference</div><a href="lines.html">Every line, dot and colour</a><a href="pitfalls.html">How the views can mislead</a><a href="glossary.html">Words</a><a href="reading.html">Read more</a></div></nav></aside>
+<main>
+<article>
+<h1>A/B comparison</h1>
+
+<p class="lead">The question: how do these two differ, at the same moment?</p>
+<p>Select a node and press <em>Mark as A</em>; another, <em>Mark as B</em>. Both appear, one above the other, on one time axis. <kbd>Space</kbd> plays, <kbd>Tab</kbd> switches between them without losing the place.</p>
+<figure><div class="shot"><img src="img/ui_ab.jpg" width="1786" height="749" loading="lazy" alt="September: the performance (n2, below) and the mechanical block-chord render of its labels (n5, above), both as chromagrams."><svg class="lead-l" viewBox="0 0 1786 749" aria-hidden="true"><g class="o"><path d="M957 251 L900 300" /><circle cx="900" cy="300" r="6.9"/><path d="M957 591 L900 640" /><circle cx="900" cy="640" r="6.9"/><path d="M477 401 L420 450" /><circle cx="420" cy="450" r="6.9"/><path d="M1257 269 L1200 318" /><circle cx="1200" cy="318" r="6.9"/><path d="M757 356 L700 405" /><circle cx="700" cy="405" r="6.9"/></g><g><path d="M957 251 L900 300" /><circle cx="900" cy="300" r="6.9"/><path d="M957 591 L900 640" /><circle cx="900" cy="640" r="6.9"/><path d="M477 401 L420 450" /><circle cx="420" cy="450" r="6.9"/><path d="M1257 269 L1200 318" /><circle cx="1200" cy="318" r="6.9"/><path d="M757 356 L700 405" /><circle cx="700" cy="405" r="6.9"/></g></svg><span class="pin" style="left:53.58%;top:33.50%">1</span><span class="pin" style="left:53.58%;top:78.90%">2</span><span class="pin" style="left:26.70%;top:53.53%">3</span><span class="pin" style="left:70.38%;top:35.91%">4</span><span class="pin" style="left:42.38%;top:47.52%">5</span></div><figcaption>September: the performance (n2, below) and the mechanical block-chord render of its labels (n5, above), both as chromagrams. <button class="pinbtn" type="button">hide numbers</button></figcaption><ol class="pinkey"><li><strong>Above, B</strong>: block chords made from the labels alone.</li><li><strong>Below, A</strong>: the performance.</li><li><strong>The header</strong> says which is which.</li><li><strong>Same D at 2:00</strong> in both: the labels and the sound agree about the reprise.</li><li><strong>Only the upper ruler has bars</strong>; the lower one shows time.</li></ol></figure>
+<p>Use it to compare a recording with its transcription, two transcribers, a plan with a piece, or two performances. Waveform, spectrogram and chromagram are shown for both; the structure views are shown for the selected piece only.</p>
+<div class="tw"><table class="key"><thead><tr><th>Looks like</th><th>What it is</th><th>How to read and use it</th></tr></thead><tbody><tr><td><svg class="sw" viewBox="0 0 48 20" style="background:#fafafa" aria-hidden="true"><path d="M24 1 V19" stroke="#ff0000" stroke-width="2"/></svg></td><td>Red lines in both views</td><td>The same moment in A and in B.</td></tr><tr><td><svg class="sw" viewBox="0 0 48 20" style="background:#fafafa" aria-hidden="true"><rect x="2" y="3" width="44" height="14" fill="#f3c9a0"/></svg></td><td>Tinted bands between two piano rolls</td><td>Fragments the program found in both pieces (after <em>Synchronize</em>); the thin lines join matching moments.</td></tr></tbody></table></div>
+<section class="more"><h2>Read more</h2><ul><li><a href="https://www.audiolabs-erlangen.de/resources/MIR/FMP/C3/C3S2_DTWbasic.html" target="_blank" rel="noopener">FMP C3S2: dynamic time warping</a> (the idea behind aligning two versions)</li></ul></section>
+
+</article>
+<nav class="pn" aria-label="Previous and next page"><a href="stack.html"><span>Previous</span>Aspect stack</a><a class="r" href="tour-september.html"><span>Next</span>Tour 1: a real piece</a></nav>
+<footer>Made from MusGenStudio's own drawing code, 23 November 2026. The pictures show the real program's views; the numbers are the program's.</footer>
+</main>
+<div class="lb" hidden><img alt=""><button type="button">Close</button></div>
+<script src="js/guide.js"></script>
+</body>
+</html>

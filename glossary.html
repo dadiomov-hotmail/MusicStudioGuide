@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Words - MusGenStudio guide</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="menu" type="button" aria-label="Show or hide the page list">Pages</button>
+<aside class="side"><a class="brand" href="index.html">MusGenStudio<br><em>a guide to the views</em></a><nav aria-label="Pages"><div class="ng"><div class="nh">Start</div><a href="index.html">Start here</a><a href="window.html">The window and the mouse</a></div><div class="ng"><div class="nh">Views</div><a href="roll.html">Piano roll and lanes</a><a href="plan.html">Plan lane</a><a href="sound.html">Spectrogram and chromagram</a><a href="raw.html">Raw aspect</a><a href="ssm.html">Self-similarity matrix</a><a href="scape.html">Scape plot and thumbnail</a><a href="novelty.html">Novelty</a><a href="stack.html">Aspect stack</a><a href="ab.html">A/B comparison</a></div><div class="ng"><div class="nh">Tours</div><a href="tour-september.html">Tour 1: a real piece</a><a href="tour-generated.html">Tour 2: a generated piece</a><a href="tour-motif.html">Tour 3: only a motif returns</a></div><div class="ng"><div class="nh">Reference</div><a href="lines.html">Every line, dot and colour</a><a href="pitfalls.html">How the views can mislead</a><a href="glossary.html" class=cur aria-current=page>Words</a><a href="reading.html">Read more</a></div></nav></aside>
+<main>
+<article>
+<h1>Words</h1>
+
+<div class="tw"><table><tbody>
+<tr><td><strong>Aspect</strong></td><td>One way of describing every moment: harmony, texture, dynamics, loudness, timbre or tempo.</td></tr>
+<tr><td><strong>Base sequence</strong></td><td>An aspect's values, ten per second, before smoothing ("raw").</td></tr>
+<tr><td><strong>Boundary</strong></td><td>A moment where something changes: a peak of novelty.</td></tr>
+<tr><td><strong>Chroma</strong></td><td>Twelve numbers: how much of each pitch class is sounding, all octaves together.</td></tr>
+<tr><td><strong>Coverage</strong></td><td>How much of the piece a section's occurrences fill, beyond the section itself.</td></tr>
+<tr><td><strong>Features</strong></td><td>The smoothed, normalised values the structure views compare.</td></tr>
+<tr><td><strong>Fitness</strong></td><td>Score and coverage combined (harmonic mean). High when a section repeats closely and fills much of the piece.</td></tr>
+<tr><td><strong>Flat</strong></td><td>An aspect that does not change at all in this piece.</td></tr>
+<tr><td><strong>Kernel</strong></td><td>The checkerboard that measures novelty; L is its half-width.</td></tr>
+<tr><td><strong>MFCC</strong></td><td>Numbers that describe the spectral shape (the colour) of a sound. The Studio uses twelve and leaves out the one for loudness.</td></tr>
+<tr><td><strong>Novelty</strong></td><td>How different the music after a moment is from the music before it.</td></tr>
+<tr><td><strong>Occurrence</strong></td><td>A place where the selected segment is found, itself included.</td></tr>
+<tr><td><strong>Path, path family</strong></td><td>The cyan lines: the alignments of a segment with all its occurrences.</td></tr>
+<tr><td><strong>Persistence (k/m)</strong></td><td>At how many of the scales that can see a moment there is a peak close by.</td></tr>
+<tr><td><strong>Return</strong></td><td>An occurrence with at least 10 seconds of other music before it. An immediate repeat is not a return.</td></tr>
+<tr><td><strong>Scale (L)</strong></td><td>How many seconds the novelty kernel looks back and ahead.</td></tr>
+<tr><td><strong>Scape plot</strong></td><td>The triangle of all sections, coloured by fitness.</td></tr>
+<tr><td><strong>SSM</strong></td><td>Self-similarity matrix.</td></tr>
+<tr><td><strong>Tempogram</strong></td><td>How strongly the onsets pulse at each tempo, over time. <em>Cyclic</em>: doublings folded together.</td></tr>
+<tr><td><strong>Threshold, penalty</strong></td><td>Only the strongest cells of the matrix are kept; the rest get a negative value, so that the search avoids them.</td></tr>
+<tr><td><strong>Thumbnail</strong></td><td>The section with the highest fitness.</td></tr>
+</tbody></table></div>
+
+</article>
+<nav class="pn" aria-label="Previous and next page"><a href="pitfalls.html"><span>Previous</span>How the views can mislead</a><a class="r" href="reading.html"><span>Next</span>Read more</a></nav>
+<footer>Made from MusGenStudio's own drawing code, 23 November 2026. The pictures show the real program's views; the numbers are the program's.</footer>
+</main>
+<div class="lb" hidden><img alt=""><button type="button">Close</button></div>
+<script src="js/guide.js"></script>
+</body>
+</html>
